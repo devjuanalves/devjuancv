@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/devjuan/images/favicon.ico.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="left-side">
+            <div class="profile-pic"></div>
+            <h1 class="project-title">Juan Alves</h1>
+            <p class="project-description">Um Dev frontend Jr procurando por uma oportunidade.</p>
+            <div id="toggle-dark-mode" class="dark-mode-toggle">🌙</div>
+            <div class="social-icons">
+                <a href="https://github.com/devjuanalves" class="social-icon github"><i class="fab fa-github"></i> Github</a>
+                <a href="https://www.linkedin.com/in/juan-alves-7371a318b/" class="social-icon linkedin"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="https://www.instagram.com/ruanzinn_/" class="social-icon instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://pixelcru.com/" class="social-icon agencia"><i class="fas fa-globe"></i> Agência</a>
+            </div>
+            <div class="stacks-icons">
+                <a href="#" class="stack-icon html5" title="HTML5"><i class="fab fa-html5"></i></a>
+                <a href="#" class="stack-icon css3" title="CSS3"><i class="fab fa-css3-alt"></i></a>
+                <a href="#" class="stack-icon javascript" title="JavaScript"><i class="fab fa-js-square"></i></a>
+                <a href="#" class="stack-icon react" title="React"><i class="fab fa-react"></i></a>
+                <a href="#" class="stack-icon tailwind" title="Tailwind CSS"><i class="fab fa-tumblr"></i></a>
+                <a href="#" class="stack-icon mysql" title="MySQL"><i class="fas fa-database"></i></a>
+            </div>
+            <button>Acesse o meu currículo</button>
+        </div>
+        <div class="right-side">
+            <div class="projects-container">
+                <div class="project" onclick="location.href='projeto1.html'">
+                    <img src="/devjuan/images/admin-ajax.png" alt="Imagem do Projeto 1" class="project-image">
+                    <div class="project-info">
+                        <h1>Método SpaHome</h1>
+                        <p class="short-description">Desenvolvimento de layout com figma e prototipagem com html, css e js.</p>
+                    </div>
+                </div>
+                <div class="project" onclick="location.href='projeto2.html'">
+                    <img src="/devjuan/images/25.png" alt="Imagem do Projeto 2" class="project-image">
+                    <div class="project-info">
+                        <h1>SupremDetox</h1>
+                        <p class="short-description">SupremDetox foi uma página de um encapsulado desenvolvido em css e js.</p>
+                    </div>
+                </div>
+                <div class="project" onclick="location.href='projeto3.html'">
+                    <img src="/devjuan/images/admin-ajax.png" alt="Imagem do Projeto 3" class="project-image">
+                    <div class="project-info">
+                        <h1>Título do Projeto 3</h1>
+                        <p class="short-description">Resumo curto do projeto 3...</p>
+                    </div>
+                </div>
+                <div class="project" onclick="location.href='projeto4.html'">
+                    <img src="/devjuan/images/admin-ajax.png" alt="Imagem do Projeto 4" class="project-image">
+                    <div class="project-info">
+                        <h1>Título do Projeto 4</h1>
+                        <p class="short-description">Resumo curto do projeto 4...</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>  
+
+    <script src="darkmode.js"></script>
+    <script>
+        // Inicialização do Particles.js
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 100 },
+                size: { value: 3 },
+                color: { value: "#ffffff" },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ffffff",
+                    opacity: 0.4,
+                    width: 1,
+                },
+                move: {
+                    enable: true,
+                    speed: 3,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                },
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true,
+                },
+                modes: {
+                    grab: { distance: 140, line_linked: { opacity: 1 } },
+                    bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+                    repulse: { distance: 100, duration: 0.4 },
+                    push: { particles_nb: 4 },
+                    remove: { particles_nb: 2 },
+                },
+            },
+            retina_detect: true,
+        });
+    </script>
+</body>
+</html>
