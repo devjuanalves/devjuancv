@@ -1,0 +1,363 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-color: white; 
+    color: black; 
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transições suaves */
+}
+
+
+
+.project-title {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700; 
+    color: black; 
+    transition: color 0.3s ease; 
+}
+
+
+body.dark-mode .project-title {
+    color: white;
+}
+
+.project-description {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 500;
+    color: black; 
+    transition: color 0.3s ease; 
+}
+
+
+body.dark-mode .project-description {
+    color: white; 
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1; 
+    padding: 0 20px; 
+}
+
+.left-side {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; 
+    color: #fff; 
+    background: none; 
+}
+
+.profile-pic {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    margin: 0 auto;
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+    background: url('/images/1722953411520.jfif') no-repeat center center;
+    background-size: cover; 
+}
+
+
+
+
+.social-icons {
+    display: flex; 
+    justify-content: center; 
+    margin: 15px 0; 
+}
+
+.social-icon {
+    padding: 10px ; 
+    color: black; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 25px; 
+    margin: 0 5px; 
+    text-decoration: none; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    backdrop-filter: blur(10px); 
+    font-size: 16px; 
+    width: 81px; 
+    height: 18px; 
+}
+
+/* Ajustando o ícone dentro do botão */
+.social-icon i {
+    margin-right: 8px; 
+    font-size: 16px; 
+}
+
+.social-icon:hover {
+    transform: scale(1.1); 
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Mudar a cor dos ícones durante o hover */
+.social-icon.github:hover i {
+    color: #333; 
+}
+
+.social-icon.linkedin:hover i {
+    color: #0077b5; 
+}
+
+.social-icon.instagram:hover i {
+    color: #e1306c; 
+}
+
+.social-icon.agencia:hover i {
+    color: #C98F67; 
+}
+
+body.dark-mode .social-icon {
+    color: white; 
+}
+
+/* Estilos para os ícones das stacks */
+.stacks-icons {
+    display: flex; 
+    justify-content: center; 
+    margin: 15px 0; 
+}
+
+.stack-icon {
+    padding: 10px; 
+    color: black; 
+    margin: 0 10px; 
+    text-decoration: none; 
+    font-size: 32px; 
+    transition: transform 0.3s ease, color 0.3s ease; /
+}
+
+
+.stack-icon:hover {
+    transform: scale(1.1); 
+}
+
+
+body.dark-mode .stack-icon {
+    color: white; 
+}
+
+/* Cores específicas no hover para cada stack */
+.stack-icon.html5:hover {
+    color: #e34c26; 
+}
+
+.stack-icon.css3:hover {
+    color: #1572b6; 
+}
+
+.stack-icon.javascript:hover {
+    color: #f7df1e; 
+}
+
+.stack-icon.react:hover {
+    color: #61dafb; 
+}
+
+.stack-icon.tailwind:hover {
+    color: #38bdf8; 
+}
+
+.stack-icon.mysql:hover {
+    color: #00758f; 
+}
+
+
+
+
+.right-side {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    margin-left: 40px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    justify-items: center; 
+}
+
+.project {
+    display: flex;
+    flex-direction: row; 
+    width: 365px; 
+    height: 150px; 
+    background: rgba(245, 245, 245, 0.911); 
+    backdrop-filter: blur(10px); 
+    align-items: center; 
+    cursor: pointer; 
+    transition: transform 0.3s, background-color 0.3s; 
+    border-radius: 10px; 
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    padding: 10px; 
+}
+
+.project-image {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+    margin-right: 20px;
+    border-radius: 10px; 
+}
+
+.project-info {
+    flex: 1; 
+}
+
+.project:hover {
+    transform: scale(1.05); 
+    background: rgba(255, 255, 255, 0.3); 
+}
+
+button {
+    padding: 15px 30px; 
+    font-size: 18px; 
+    background-color: rgba(0, 0, 0, 0.1); 
+    color: black; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+/* Efeito hover para o botão */
+button:hover {
+    transform: scale(1.1); 
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+/* Estilos para o dark mode */
+body.dark-mode button {
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: white; 
+}
+
+/* Efeito hover no dark mode */
+body.dark-mode button:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.dark-mode-toggle {
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: white; 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    z-index: 1000; 
+}
+
+body.dark-mode .dark-mode-toggle {
+    background-color: rgba(255, 255, 255, 0.3); 
+    color: black; 
+}
+
+body {
+    color: black; 
+}
+
+
+body.dark-mode {
+    background-color: black;
+    color: white; 
+}
+
+/* Estilos gerais para dispositivos móveis */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+        padding: 0; 
+        overflow-y: auto; 
+    }
+
+    .container {
+        flex-direction: column; 
+        height: auto; 
+        align-items: center; 
+        padding: 20px 10px; 
+    }
+
+    .left-side {
+        text-align: center; 
+        padding: 10px; 
+    }
+
+    .profile-pic {
+        width: 150px; 
+        height: 150px; 
+        margin: 0 auto; 
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr; 
+        width: 100%; 
+        padding: 0 10px; 
+        box-sizing: border-box; 
+    }
+
+    .project {
+        width: 100%; 
+        height: auto; 
+        padding: 10px; 
+        margin: 10px 0; 
+        text-align: center; 
+    }
+
+    .project-image {
+        width: 80px; 
+        height: 80px; 
+        margin: 0 auto 10px; 
+    }
+
+    .project-info {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    button {
+        padding: 10px 20px; 
+        font-size: 16px; 
+        margin-top: 10px; 
+        width: auto; 
+    }
+
+    .dark-mode-toggle {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+
+
+
