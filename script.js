@@ -13,7 +13,7 @@ loginBtn.addEventListener('click', () => {
 
 // Inicializa o Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyBMGYk6rYP4eyw4sgHR4zOj3F30DeI1cgo",
+    apiKey: "",
     authDomain: "portfolio-devjuan.firebaseapp.com",
     databaseURL: "https://portfolio-devjuan-default-rtdb.firebaseio.com",
     projectId: "portfolio-devjuan",
